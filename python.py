@@ -3,7 +3,14 @@ from __future__ import unicode_literals
 import unicodedata
 
 _special_cases = {
-    'œ': 'OE',
+    'œ': 'oe',
+    'Œ': 'OE',
+    'þ': 'th',
+    'Þ': 'TH',
+    'æ': 'ae',
+    'Æ': 'AE',
+    'ü': 'ue',
+    'Ü': 'UE',
 }
 
 def asciify(text):
