@@ -24,6 +24,7 @@ namespace asciify
 			{'Ö', "OE"},
 			{'ü', "ue"},
 			{'Ü', "UE"},
+			{'ß', "ss"},
 		};
 
 		public static String asciify(String text) {
