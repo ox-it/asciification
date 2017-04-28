@@ -19,8 +19,8 @@ _special_cases = {
 }
 
 def asciify(text):
-    text = unicodedata.normalize(text, 'NFC')
+    text = unicodedata.normalize('NFC', text)
     text = ''.join(_special_cases.get(c, c) for c in text)
-    text = unicodedata.normalize(text, 'NFD')
+    text = unicodedata.normalize('NFD', text)
     text = ''.join(c for c in text if ord(c) <= 127)
     return text
